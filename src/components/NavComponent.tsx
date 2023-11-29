@@ -12,33 +12,37 @@ import {
   NavbarMenuItem,
 } from "@nextui-org/react";
 
-import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { ThemeSwitcher } from "./ThemeSwitcher";
 
 const navItems = [
   {
-    name: "Home",
-    href: "/",
+    name: "About",
+    href: "#about",
   },
   {
-    name: "Problem Statements",
-    href: "/problem-statements",
+    name: "Tracks",
+    href: "#tracks",
   },
   {
-    name: "Our Team",
-    href: "/team",
+    name: "Team",
+    href: "#team",
   },
   {
     name: "Judges",
-    href: "/judges",
+    href: "#judges",
+  },
+  {
+    name: "FAQs",
+    href: "#faqs",
   },
 ];
 
 function NavComponent() {
-  const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const [pathname, setPathname] = useState(
+    window?.location?.href?.split("/").pop() ?? "",
+  );
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen} isBordered shouldHideOnScroll>
       <NavbarContent>
@@ -47,7 +51,9 @@ function NavComponent() {
           className="md:hidden"
         />
         <NavbarBrand>
-          <p className="font-bold text-inherit">LOGO</p>
+          <Link href="#" className="font-bold text-inherit">
+            LOGO
+          </Link>
         </NavbarBrand>
       </NavbarContent>
       <NavbarContent className="hidden gap-4 md:flex" justify="center">
@@ -61,6 +67,9 @@ function NavComponent() {
               className="w-full"
               href={item.href}
               size="md"
+              onClick={() => {
+                setPathname(item.href);
+              }}
             >
               {item.name}
             </Link>

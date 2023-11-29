@@ -1,9 +1,12 @@
 import "@/styles/globals.css";
 
 import { Inter } from "next/font/google";
+import dynamic from "next/dynamic";
 import { Providers } from "./providers";
 
-import NavComponent from "@/components/NavComponent";
+const NavComponent = dynamic(() => import("@/components/NavComponent"), {
+  ssr: false,
+});
 
 const inter = Inter({
   subsets: ["latin"],
