@@ -16,5 +16,41 @@ export default {
       },
     },
   },
-  plugins: [nextui()],
+  plugins: [
+    nextui({
+      themes: {
+        light: {
+          colors: {
+            primary: {
+              DEFAULT: "#1f8e61",
+              foreground: "#ffffff",
+            },
+            secondary: {
+              DEFAULT: "#bc9e5a",
+              foreground: "#ffffff",
+            },
+            foreground: "#1c1e27",
+            background: "#ffffff",
+            focus: "#1f8e61",
+          },
+        },
+        dark: {
+          extend: "dark",
+          colors: {
+            primary: {
+              DEFAULT: "#58ba92",
+              foreground: "#000000",
+            },
+            secondary: {
+              DEFAULT: "#d8b973",
+              foreground: "#000000",
+            },
+            foreground: "#ffffff",
+            background: "#1c1e27",
+            focus: "#58ba92",
+          },
+        },
+      },
+    }),
+  ],
 } satisfies Config;

@@ -3,6 +3,8 @@ import "@/styles/globals.css";
 import { Inter } from "next/font/google";
 import { Providers } from "./providers";
 
+import NavComponent from "@/components/NavComponent";
+
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
@@ -22,7 +24,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`font-sans ${inter.variable}`}>
-        <Providers>{children}</Providers>
+        <Providers>
+          <NavComponent />
+          {children}
+        </Providers>
       </body>
     </html>
   );
