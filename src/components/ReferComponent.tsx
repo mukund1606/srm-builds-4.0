@@ -23,7 +23,7 @@ function ReferComponent() {
               Refer and Earn
             </span>
           </h1>
-          <ul className="flex list-disc flex-col gap-3 text-medium font-medium md:text-lg">
+          <ul className="flex list-disc flex-col gap-3 pl-4 text-medium font-medium md:text-lg">
             <li>
               If you cross 100+ registration from your referral link then you
               are eligible for the contest.

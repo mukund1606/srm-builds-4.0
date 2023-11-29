@@ -19,7 +19,7 @@ function AboutComponent() {
         <div className="flex flex-col gap-10">
           <h1 className="text-center text-4xl font-extrabold md:text-5xl">
             <span className="bg-gradient-to-r from-[#58ba92] to-[#2faa79] bg-clip-text text-transparent">
-              Schedule
+              SRM Builds 4.0
             </span>{" "}
             Hackathon is here!
           </h1>
