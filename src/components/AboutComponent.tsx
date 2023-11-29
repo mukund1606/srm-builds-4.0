@@ -76,7 +76,7 @@ function AboutComponent() {
             </span>
           </h1>
           <div className="flex flex-col gap-3 text-center text-medium font-medium md:text-lg">
-            <div className="flex h-[40rem] items-center justify-center rounded-md border text-3xl font-bold">
+            <div className="flex h-[40rem] items-center justify-center rounded-md text-3xl font-bold">
               Coming Soon
             </div>
           </div>
