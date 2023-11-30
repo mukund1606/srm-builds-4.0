@@ -10,6 +10,7 @@ import {
   NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
+  Image,
 } from "@nextui-org/react";
 
 import { useState } from "react";
@@ -52,7 +53,13 @@ function NavComponent() {
         />
         <NavbarBrand>
           <Link href="#" className="font-bold text-inherit">
-            LOGO
+            <Image
+              src="/logo2.png"
+              height={200}
+              alt="SRM Build 4.0"
+              radius="none"
+              className="aspect-auto h-10"
+            />
           </Link>
         </NavbarBrand>
       </NavbarContent>
@@ -102,6 +109,9 @@ function NavComponent() {
               className="w-full"
               href={item.href}
               size="lg"
+              onClick={() => {
+                setPathname(item.href);
+              }}
             >
               {item.name}
             </Link>

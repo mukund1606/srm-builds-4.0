@@ -1,5 +1,5 @@
 "use client";
-import { Button, Link } from "@nextui-org/react";
+import { Button, Image, Link } from "@nextui-org/react";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
@@ -13,9 +13,13 @@ function HeroComponent() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
       >
-        <span className="flex h-40 w-80 items-center justify-center rounded-md border text-3xl font-bold">
-          Logo
-        </span>
+        <Image
+          src="/logo2.png"
+          height={400}
+          alt="SRM Build 4.0"
+          radius="none"
+          className="aspect-auto h-40"
+        />
         <CountDown />
         <div className="flex gap-2">
           <Button
