@@ -3,10 +3,9 @@ import { motion } from "framer-motion";
 
 function MapComponent() {
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center" id="map">
       <motion.div
         className="mt-4 flex w-[min(100%,_80rem)] flex-col items-center justify-center gap-12 px-4 py-16 md:px-8 lg:px-12"
-        id="map"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}

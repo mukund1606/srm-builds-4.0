@@ -50,10 +50,12 @@ const sponsorTracks: CardData[] = [
 
 function PrizesComponent() {
   return (
-    <div className="flex justify-center bg-background bg-opacity-40 backdrop-blur-sm">
+    <div
+      className="flex justify-center bg-background bg-opacity-40 backdrop-blur-sm"
+      id="prizes"
+    >
       <motion.div
         className="mt-4 flex w-[min(100%,_80rem)] flex-col items-center justify-center gap-16 px-4 py-16 md:px-8 lg:px-12"
-        id="prizes"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}

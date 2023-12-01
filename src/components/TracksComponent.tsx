@@ -43,10 +43,9 @@ const tracks: CardData[] = [
 
 function TracksComponent() {
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center" id="tracks">
       <motion.div
         className="mt-4 flex w-[min(100%,_80rem)] flex-col items-center justify-center gap-12 px-4 py-16 md:px-8 lg:px-12"
-        id="tracks"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}

@@ -14,8 +14,11 @@ import { Button, Image, Link } from "@nextui-org/react";
 function Footer() {
   return (
     <>
-      <div className="flex justify-center bg-background bg-opacity-40 backdrop-blur-sm">
-        <div className="w-[min(100%,_85rem)]" id="footer">
+      <div
+        className="flex justify-center bg-background bg-opacity-40 backdrop-blur-sm"
+        id="footer"
+      >
+        <div className="w-[min(100%,_85rem)]">
           <motion.div
             className="grid w-full justify-center gap-12 px-4 py-4 md:flex md:justify-between md:px-8 lg:px-12"
             initial="hidden"

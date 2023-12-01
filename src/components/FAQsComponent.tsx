@@ -47,10 +47,9 @@ const questions: Question[] = [
 
 function FAQsComponent() {
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center" id="faqs">
       <motion.div
         className="mt-4 flex w-[min(100%,_80rem)] flex-col items-center justify-center gap-8 px-4 py-16 md:px-8 lg:px-12"
-        id="faqs"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}

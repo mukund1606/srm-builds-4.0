@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 
 function AboutComponent() {
   return (
-    <div className="flex justify-center bg-background bg-opacity-60 backdrop-blur-sm">
-      <div
-        className="flex w-[min(100%,_80rem)] flex-col items-center justify-center gap-16 px-4 py-16 md:px-8 lg:px-12"
-        id="about"
-      >
+    <div
+      className="flex justify-center bg-background bg-opacity-60 backdrop-blur-sm"
+      id="about"
+    >
+      <div className="flex w-[min(100%,_80rem)] flex-col items-center justify-center gap-16 px-4 py-16 md:px-8 lg:px-12">
         <motion.div
           className="flex flex-col gap-8"
           initial="hidden"

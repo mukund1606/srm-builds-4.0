@@ -3,10 +3,9 @@ import { motion } from "framer-motion";
 
 function ScheduleComponent() {
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center" id="schedule">
       <motion.div
         className="flex w-[min(100%,_80rem)] flex-col items-center justify-center gap-12 px-4 py-16 md:px-8 lg:px-12"
-        id="schedule"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
