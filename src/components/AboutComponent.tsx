@@ -25,7 +25,7 @@ function AboutComponent() {
             </span>{" "}
             Hackathon is here!
           </h1>
-          <div className="flex flex-col gap-3 text-medium font-medium md:text-lg">
+          <div className="flex flex-col gap-3 text-center text-medium font-medium md:text-left md:text-lg">
             <p>
               SRM Builds 4.0 is a 36 hour hackathon, an initiative by CIIE
               (Centre for Innovation, Incubation and Entrepreneurship), SRM
@@ -67,7 +67,7 @@ function AboutComponent() {
               CIIE
             </span>
           </h1>
-          <div className="flex flex-col gap-3 text-medium font-medium md:text-lg">
+          <div className="flex flex-col gap-3 text-center text-medium font-medium md:text-left md:text-lg">
             <p>
               The CIIE (Centre for Innovation, Incubation, and Entrepreneurship)
               serves as an inclusive platform backed by the MHRD ministry. Its
