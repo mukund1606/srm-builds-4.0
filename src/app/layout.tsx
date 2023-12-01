@@ -15,8 +15,35 @@ const font = Poppins({
 
 export const metadata = {
   title: "SRM Builds 4.0",
-  description: "This is the website for SRM Builds 4.0",
-  icons: [{ rel: "icon", url: "/favicon.ico" }],
+  description:
+    "SRM Builds 4.0 is a 36 hour hackathon, an initiative by CIIE (Centre for Innovation, Incubation and Entrepreneurship) SRM University Sonepat. Which is being held in Sonepat, India.",
+  manifest: "/manifest.json",
+  creator: "Mukund Mittal",
+  generator: "NextJS 14.0.3",
+  icons: { apple: "/logo.png" },
+  metadataBase: new URL("https://srmbuilds.vercel.app/"),
+  alternates: {
+    canonical: "https://srmbuilds.vercel.app/",
+    languages: {
+      en: "https://srmbuilds.vercel.app/",
+    },
+  },
+  openGraph: {
+    title: "SRM Builds 4.0",
+    description:
+      "SRM Builds 4.0 is a 36 hour hackathon, an initiative by CIIE (Centre for Innovation, Incubation and Entrepreneurship) SRM University Sonepat. Which is being held in Sonepat, India.",
+    images: "/logo.png",
+    url: "https://srmbuilds.vercel.app/",
+    siteName: "SRM Builds 4.0",
+    locale: "en",
+    type: "website",
+  },
+};
+
+export const viewport = {
+  themeColor: "#ffffff",
+  width: "device-width",
+  initialScale: 1.0,
 };
 
 export default function RootLayout({

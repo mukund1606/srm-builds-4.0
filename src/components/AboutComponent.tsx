@@ -27,11 +27,12 @@ function AboutComponent() {
           </h1>
           <div className="flex flex-col gap-3 text-medium font-medium md:text-lg">
             <p>
-              SRM Builds 4.0 is a 36 hour hackathon, an initiative of SRM
-              University Sonepat, CIIE. Which is being held in Sonepat, India.
-              It is a 36 Hour Hackathon where participants will build projects
-              to solve problems and compete with other participants and innovate
-              for society.
+              SRM Builds 4.0 is a 36 hour hackathon, an initiative by CIIE
+              (Centre for Innovation, Incubation and Entrepreneurship), SRM
+              University Sonepat. Which is being held in Sonepat, India. It is a
+              36 Hour Hackathon where participants will build projects to solve
+              problems and compete with other participants and innovate for
+              society.
             </p>
             <p>
               Our moto is to ignite new ideas from students that would alter and
@@ -42,12 +43,10 @@ function AboutComponent() {
             <p>
               SRM Builds 4.0 is an amalgamation of fun and learning where
               spectacular ideas will be displayed, and students will learn and
-              feel inspired.
-            </p>
-            <p>
-              Our 36-hour hackathon fosters an environment of teamwork and
-              innovation, where students showcase their passion for technology,
-              their creative drive, and their ingenious problem-solving skills.
+              feel inspired. Our 36-hour hackathon fosters an environment of
+              teamwork and innovation, where students showcase their passion for
+              technology, their creative drive, and their ingenious
+              problem-solving skills.
             </p>
           </div>
         </motion.div>
@@ -63,6 +62,7 @@ function AboutComponent() {
           }}
         >
           <h1 className="text-center text-4xl font-extrabold md:text-5xl">
+            About{" "}
             <span className="bg-gradient-to-r from-[#58ba92] to-[#2faa79] bg-clip-text text-transparent">
               CIIE
             </span>
