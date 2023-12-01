@@ -20,7 +20,7 @@ export const metadata = {
   manifest: "/manifest.json",
   creator: "Mukund Mittal",
   generator: "NextJS 14.0.3",
-  icons: { apple: "/logo.png" },
+  icons: { apple: "/rounded-logo.png" },
   metadataBase: new URL("https://srmbuilds.vercel.app/"),
   alternates: {
     canonical: "https://srmbuilds.vercel.app/",
@@ -32,7 +32,7 @@ export const metadata = {
     title: "SRM Builds 4.0",
     description:
       "SRM Builds 4.0 is a 36 hour hackathon, an initiative by CIIE (Centre for Innovation, Incubation and Entrepreneurship) SRM University Sonepat. Which is being held in Sonepat, India.",
-    images: "/logo.png",
+    images: "/rounded-logo.png",
     url: "https://srmbuilds.vercel.app/",
     siteName: "SRM Builds 4.0",
     locale: "en",
