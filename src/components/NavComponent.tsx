@@ -52,7 +52,13 @@ function NavComponent() {
           className="md:hidden"
         />
         <NavbarBrand>
-          <Link href="/" className="font-bold text-inherit">
+          <Link
+            href="/"
+            className="font-bold text-inherit"
+            onClick={() => {
+              setPathname("/");
+            }}
+          >
             <Image
               src="/logo2.png"
               height={200}
