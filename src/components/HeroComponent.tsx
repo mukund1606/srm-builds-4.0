@@ -2,13 +2,13 @@
 import { Button, Image, Link } from "@nextui-org/react";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { MapPin } from "lucide-react";
 
 function HeroComponent() {
   return (
     <>
-      <div className="fixed top-0 -z-10 h-screen w-full bg-red-100 opacity-10"></div>
       <motion.div
-        className="flex min-h-[calc(100vh-4.1rem)] w-full flex-col items-center justify-center gap-4 px-4 py-24 md:px-8 lg:px-12"
+        className="flex min-h-[calc(100vh-4.1rem)] w-full flex-col items-center justify-center gap-4 px-4 py-16 md:px-8 lg:px-12"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
@@ -18,7 +18,7 @@ function HeroComponent() {
           height={400}
           alt="SRM Build 4.0"
           radius="none"
-          className="aspect-auto h-40"
+          className="aspect-auto max-h-40"
         />
         <CountDown />
         <div className="flex gap-2">
@@ -30,7 +30,7 @@ function HeroComponent() {
             size="md"
             className="font-bold md:text-lg"
           >
-            Problem Statements
+            Tracks
           </Button>
           <Button
             as={Link}
@@ -43,9 +43,15 @@ function HeroComponent() {
             How to Reach
           </Button>
         </div>
-        <span className="text-center text-medium font-bold md:text-2xl lg:text-3xl">
-          December 9th and 10th @ SRM University Sonepat, Delhi-NCR
-        </span>
+        <div className="flex flex-col gap-2 lg:flex-row">
+          <span className="text-center text-medium font-bold md:text-2xl lg:text-3xl">
+            December 9<sup>th</sup> and 10<sup>th</sup>
+          </span>
+          <span className="text-center text-medium font-bold md:text-2xl lg:text-3xl">
+            <MapPin className="inline w-auto md:h-6 lg:h-8" />
+            SRM University Sonepat, Delhi-NCR
+          </span>
+        </div>
       </motion.div>
     </>
   );
@@ -63,6 +69,9 @@ function CountDown() {
   function updateCountDown() {
     const now = new Date();
     const diff = date.getTime() - now.getTime();
+    if (diff < 0) {
+      return;
+    }
     const daysLeft = Math.floor(diff / (1000 * 60 * 60 * 24));
     const hoursLeft = Math.floor(
       (diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),

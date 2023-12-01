@@ -1,83 +1,51 @@
 "use client";
 import { motion } from "framer-motion";
-import { Card, CardBody, CardFooter, Image } from "@nextui-org/react";
+import { type CardData, CardElement } from "./CardElement";
 
-type TrackData = {
-  title: string;
-  description: string;
-  image: string;
-};
-
-const tracks: TrackData[] = [
+const tracks: CardData[] = [
   {
-    title: "Blockchain",
-    image:
-      "https://blogs.iadb.org/caribbean-dev-trends/wp-content/uploads/sites/34/2017/12/Blockchain1.jpg",
-    description: "Blockchain is a distributed, decentralized, public ledger.",
+    title: "Web3 & Blockchain",
+    image: "/tracks/blockchain.png",
+    description:
+      "Dive into the world of decentralized technologies and explore the potential of blockchain in revolutionizing industries.",
   },
   {
-    title: "AI and DATA",
-    image:
-      "https://talentsprint.com/course/ai-machine-learning-iiit-hyderabad/images/header-graphic-aiml.webp",
+    title: "Social Good",
+    image: "/tracks/social.png",
     description:
-      "Artificial intelligence (AI) is the simulation of human intelligence processes by machines, especially computer systems.",
-  },
-  {
-    title: "Healthcare",
-    image:
-      "https://www.sattva.co.in/wp-content/uploads/2022/12/Untitled-1200-%C3%97-630-px.png",
-    description:
-      "Healthcare is the maintenance or improvement of health via the prevention, diagnosis, treatment, recovery, or cure of disease, illness, injury, and other physical and mental impairments in people.",
-  },
-  {
-    title: "AR/VR",
-    image:
-      "https://www.technology-innovators.com/wp-content/uploads/2023/05/The-Future-of-ARVR-Transforming-the-Way-We-See-and-Interact-with-the-World-min.jpg",
-    description:
-      "Augmented reality (AR) is an interactive experience of a real-world environment where the objects that reside in the real world are enhanced by computer-generated perceptual information, sometimes across multiple sensory modalities, including visual, auditory, haptic, somatosensory and olfactory.",
+      "Channel your skills towards projects with a positive impact on society, addressing real-world issues and contributing to social change.",
   },
   {
     title: "Open Innovation",
-    image:
-      "https://cdn-facpg.nitrocdn.com/OusIzrOrgAhkXofPVQIPbIcDPXRbbpOc/assets/images/optimized/rev-524caaf/edison365.com/wp-content/uploads/2020/05/open-innovation-funnel-2.png",
+    image: "/tracks/openinnovation.png",
     description:
-      "Open innovation is a business management model for innovation that promotes collaboration with people and organizations outside the company.",
+      "Embrace the spirit of open collaboration, where diverse ideas and perspectives come together to create innovative solutions.",
   },
   {
-    title: "Cloud",
-    image:
-      "https://www.cybersuccess.biz/wp-content/uploads/2022/06/Explore-The-Essential-Characteristics-of-Cloud-Computing.webp",
+    title: "FinTech",
+    image: "/tracks/fintech.png",
     description:
-      "Cloud computing is the on-demand availability of computer system resources, especially data storage (cloud storage) and computing power, without direct active management by the user.",
+      "Unleash your creativity in the financial technology landscape, developing solutions that redefine the way we handle transactions, investments, and financial services.",
   },
   {
-    title: "Cyber Security",
-    image:
-      "https://cdn.sanity.io/images/tlr8oxjg/production/bdb77d61d1ef7dc459bf17ae010658476c00d420-1456x816.png",
+    title: "EdTech",
+    image: "/tracks/edtech.png",
     description:
-      "Cybersecurity is the practice of protecting systems, networks, and programs from digital attacks.",
+      "Explore the intersection of technology and education, devising tools and platforms that enhance learning experiences and accessibility.",
   },
   {
-    title: "IOT",
-    image:
-      "https://www.simplilearn.com/ice9/free_resources_article_thumb/The_Top_35_IoT_Terms.jpg",
+    title: "AR/VR",
+    image: "/tracks/vr.png",
     description:
-      "The Internet of Things (IoT) describes the network of physical objects—“things”—that are embedded with sensors, software, and other technologies for the purpose of connecting and exchanging data with other devices and systems over the Internet.",
-  },
-  {
-    title: "Education",
-    image:
-      "https://digitallearning.eletsonline.com/wp-content/uploads/2018/12/Effective-education-system-%E2%80%93-A-must-for-nation-building.jpg",
-    description:
-      "Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, morals, beliefs, and habits.",
+      "Immerse yourself in the world of augmented and virtual reality, pushing the boundaries of what's possible in entertainment, education, and beyond.",
   },
 ];
 
 function TracksComponent() {
   return (
-    <div className="flex justify-center bg-background">
+    <div className="flex justify-center">
       <motion.div
-        className="mt-4 flex min-h-screen w-[min(100%,_70rem)] flex-col items-center justify-center gap-12 px-4 py-24 md:px-8 lg:px-12"
+        className="mt-4 flex w-[min(100%,_80rem)] flex-col items-center justify-center gap-12 px-4 py-16 md:px-8 lg:px-12"
         id="tracks"
         initial="hidden"
         whileInView="visible"
@@ -94,9 +62,11 @@ function TracksComponent() {
               Tracks
             </span>
           </h1>
-          <div className="grid grid-cols-1 gap-3 text-medium font-medium md:grid-cols-2 md:text-lg lg:grid-cols-3">
+          <div className="flex flex-wrap items-center justify-center gap-3 text-medium font-medium md:text-lg">
             {tracks.map((track, index) => (
-              <TrackElement data={track} key={index} />
+              <div key={index} className="w-full md:w-[49%] lg:w-[32%]">
+                <CardElement data={track} />
+              </div>
             ))}
           </div>
         </div>
@@ -106,32 +76,3 @@ function TracksComponent() {
 }
 
 export default TracksComponent;
-
-function TrackElement({ data }: { data: TrackData }) {
-  return (
-    <Card
-      shadow="sm"
-      isPressable
-      isFooterBlurred
-      className="group relative w-full hover:scale-105"
-      radius="lg"
-    >
-      <CardBody className="overflow-visible p-0">
-        <Image
-          shadow="sm"
-          radius="lg"
-          width="100%"
-          alt={data.title}
-          className="aspect-[12/9] w-full object-cover"
-          src={data.image}
-        />
-        <div className="absolute inset-0 top-0 z-10 flex justify-center bg-background bg-opacity-80 px-3 py-6 text-sm opacity-0 drop-shadow-lg transition-all duration-500 group-hover:opacity-100">
-          {data.description}
-        </div>
-      </CardBody>
-      <CardFooter className="absolute bottom-1 z-10 ml-1 w-[calc(100%_-_8px)] justify-between overflow-hidden rounded-large border-1 border-white/20 bg-background bg-opacity-80 py-1 shadow-small before:rounded-xl before:bg-black">
-        <p className="text-medium">{data.title}</p>
-      </CardFooter>
-    </Card>
-  );
-}

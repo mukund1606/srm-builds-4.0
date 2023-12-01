@@ -1,6 +1,6 @@
 import "@/styles/globals.css";
 
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import dynamic from "next/dynamic";
 import { Providers } from "./providers";
 
@@ -8,9 +8,9 @@ const NavComponent = dynamic(() => import("@/components/NavComponent"), {
   ssr: false,
 });
 
-const inter = Inter({
+const font = Poppins({
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
-  variable: "--font-sans",
 });
 
 export const metadata = {
@@ -26,10 +26,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`font-sans ${inter.variable}`}>
+      <body className={`${font.className}`}>
         <Providers>
           <NavComponent />
-          {children}
+          <div className="bg-gradient-to-b from-background to-black">
+            <div className="sticky z-10">{children}</div>
+            <div className="fixed top-0 z-0 h-screen w-full bg-[url('/bg.jpg')] bg-cover bg-no-repeat opacity-10 blur-sm" />
+          </div>
         </Providers>
       </body>
     </html>

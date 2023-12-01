@@ -14,45 +14,45 @@ import {
 } from "@nextui-org/react";
 
 import { useState } from "react";
-import { ThemeSwitcher } from "./ThemeSwitcher";
+// import { ThemeSwitcher } from "./ThemeSwitcher";
 
 const navItems = [
   {
     name: "About",
-    href: "#about",
+    href: "/#about",
   },
   {
     name: "Tracks",
-    href: "#tracks",
+    href: "/#tracks",
   },
   {
     name: "Team",
-    href: "#team",
+    href: "/team",
   },
   {
     name: "Judges",
-    href: "#judges",
+    href: "/judges",
   },
   {
     name: "FAQs",
-    href: "#faqs",
+    href: "/#faqs",
   },
 ];
 
 function NavComponent() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [pathname, setPathname] = useState(
-    window?.location?.href?.split("/").pop() ?? "",
+    "/" + window?.location?.href?.split("/").pop(),
   );
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen} isBordered shouldHideOnScroll>
+    <Navbar onMenuOpenChange={setIsMenuOpen} isBordered>
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="md:hidden"
         />
         <NavbarBrand>
-          <Link href="#" className="font-bold text-inherit">
+          <Link href="/" className="font-bold text-inherit">
             <Image
               src="/logo2.png"
               height={200}
@@ -96,7 +96,7 @@ function NavComponent() {
             Register Now
           </Button>
         </NavbarItem>
-        <ThemeSwitcher />
+        {/* <ThemeSwitcher /> */}
       </NavbarContent>
       <NavbarMenu>
         {navItems.map((item, index) => (
