@@ -31,12 +31,12 @@ const questions: Question[] = [
   {
     question: "I am a newbie, can I hack?",
     answer:
-      "Based on the info provided in the registration form and a telephonic interview (if required), teams will be shortlisted for the hackathon.",
+      "Of course you can! We at SRM BUILDS ensure that no one is left behind during the hacking, thanks to our mentors and volunteers who help us achieve the same. We make sure that you learn the best you can alongside having fun and experiencing what it feels to belong to a community",
   },
   {
     question: "What is the shortlisting procedure?",
     answer:
-      "Firstly make sure all teammates have registered on Devfolio. You can create your team from the devfolio dashboard.",
+      "Based on the info provided in the registration form and a telephonic interview (if required), teams will be shortlisted for the hackathon.",
   },
   {
     question: "Can I start working on my hack before the event?",
