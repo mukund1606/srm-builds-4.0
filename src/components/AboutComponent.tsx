@@ -25,7 +25,7 @@ function AboutComponent() {
             </span>{" "}
             Hackathon is here!
           </h1>
-          <div className="flex flex-col gap-3 text-center text-medium font-medium md:text-left md:text-lg">
+          <div className="flex flex-col gap-3 text-justify text-medium font-medium md:text-lg">
             <p>
               Get ready to immerse yourself in a whirlwind of creativity and
               innovation at SRM BUILDS 4.0, a 36-hour hackathon organized by the
@@ -64,20 +64,30 @@ function AboutComponent() {
           <h1 className="text-center text-4xl font-extrabold md:text-5xl">
             About{" "}
             <span className="bg-gradient-to-r from-[#58ba92] to-[#2faa79] bg-clip-text text-transparent">
-              CIIE
+              CIIE: Where Innovation Meets Impact
             </span>
           </h1>
-          <div className="flex flex-col gap-3 text-center text-medium font-medium md:text-left md:text-lg">
+          <div className="flex flex-col gap-3 text-justify text-medium font-medium md:text-lg">
             <p>
-              The CIIE (Centre for Innovation, Incubation, and Entrepreneurship)
-              serves as an inclusive platform backed by the MHRD ministry. Its
-              focus is on fostering innovation, supporting the incubation of
-              novel ideas and projects, and promoting entrepreneurship among
-              students. The ultimate aim is to guide these concepts toward
-              becoming fully developed startups that actively contribute to the
-              enhancement of society. CIIE is dedicated in nurturing creativity,
-              providing early-stage support for business or project development,
-              and cultivating an entrepreneurial mindset.
+              Backed by the esteemed Ministry of Human Resource Development
+              (MHRD), CIIE is dedicated to fostering a culture of creativity,
+              nurturing entrepreneurial aspirations, and transforming
+              groundbreaking ideas into impactful startups.
+            </p>
+            <p>
+              It serves as an inclusive platform, welcoming students from
+              diverse backgrounds and nurturing their entrepreneurial spirit. By
+              providing early-stage support, mentorship, and access to
+              resources, CIIE empowers aspiring entrepreneurs to navigate the
+              challenges of business development and bring their transformative
+              ideas to life.
+            </p>
+            <br />
+            <p className="text-justify lg:text-right">
+              <strong>
+                Empowering Innovation, Incubating Dreams, Igniting
+                Entrepreneurship: The CIIE Mission
+              </strong>
             </p>
           </div>
         </motion.div>
