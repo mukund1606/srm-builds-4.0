@@ -27,8 +27,13 @@ export function CardElement({ data }: { data: CardData }) {
             />
           </div>
           {data.description && (
-            <div className="text-md absolute inset-1 z-20 flex items-center justify-center rounded-xl bg-background bg-opacity-80 px-3 py-6 text-center font-semibold opacity-0 drop-shadow-lg backdrop-blur-sm transition-all duration-500 group-hover:opacity-100 lg:text-lg">
-              {data.description}
+            <div
+              className="text-md absolute inset-1 z-20 flex items-center justify-center rounded-xl bg-background bg-opacity-80 px-3 py-6 text-center font-semibold opacity-0 drop-shadow-lg backdrop-blur-sm transition-all duration-500 group-hover:opacity-100 lg:text-lg"
+              dangerouslySetInnerHTML={{
+                __html: data.description,
+              }}
+            >
+              {/* {data.description} */}
             </div>
           )}
         </CardBody>

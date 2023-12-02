@@ -21,12 +21,12 @@ const prizes: CardData[] = [
   {
     image: "/prizes/goodies.png",
     title: "Best Female Team",
-    description: "Goodies and Swags for Best All Female Team",
+    description: "Goodies and Swags for </br> Best Female Team",
   },
   {
     image: "/prizes/goodies.png",
     title: "Best Beginners Team",
-    description: "Goodies and Swags for Best Beginners Teas",
+    description: "Goodies and Swags for </br> Best Beginners Team",
   },
 ];
 
@@ -87,7 +87,7 @@ function PrizesComponent() {
               </span>
             </h1>
             <h4 className="text-md w-full text-center font-medium opacity-50 md:text-lg">
-              Sponsors Tracks will keep on updating, Stay Tuned!
+              Sponsor Tracks will keep on updating, Stay Tuned!
             </h4>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-3 text-medium font-medium md:text-lg">

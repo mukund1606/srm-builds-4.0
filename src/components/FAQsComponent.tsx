@@ -9,16 +9,16 @@ type Question = {
 
 const questions: Question[] = [
   {
-    question: "What is a Hackathon?",
+    question: "What is a hackathon?",
     answer:
       "A hackathon is a design sprint-like event in which computer programmers and others involved in software development, including graphic designers, interface designers, project managers, domain experts, and others, collaborate intensively on software projects. A hackathon typically lasts between a day and a week.",
   },
   {
-    question: "Team Size?",
+    question: "Team size?",
     answer: "4 members per team.",
   },
   {
-    question: "Do I Need To Pay Any Money To Register?",
+    question: "Do I need to pay any money for registration?",
     answer:
       "We don't want to monetize learning, community, and innovation. So, There is no participation/registration fees.",
   },

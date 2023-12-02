@@ -60,7 +60,7 @@ function HeroComponent() {
 export default HeroComponent;
 
 function CountDown() {
-  const date = new Date(Date.UTC(2023, 11, 8, 18, 30, 0));
+  const date = new Date(Date.UTC(2023, 11, 9, 3, 30, 0));
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
