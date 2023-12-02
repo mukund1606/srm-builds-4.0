@@ -27,26 +27,26 @@ function AboutComponent() {
           </h1>
           <div className="flex flex-col gap-3 text-center text-medium font-medium md:text-left md:text-lg">
             <p>
-              SRM Builds 4.0 is a 36 hour hackathon, an initiative by CIIE
-              (Centre for Innovation, Incubation and Entrepreneurship), SRM
-              University Sonepat. Which is being held in Sonepat, India. It is a
-              36 Hour Hackathon where participants will build projects to solve
-              problems and compete with other participants and innovate for
-              society.
+              Get ready to immerse yourself in a whirlwind of creativity and
+              innovation at SRM BUILDS 4.0, a 36-hour hackathon organized by the
+              Center for Innovation, Incubation and Entrepreneurship (CIIE) at
+              SRM University, Delhi-NCR. Taking place in Sonepat, India, this
+              electrifying event will challenge you to push the boundaries of
+              technology and develop groundbreaking solutions that address
+              real-world problems.
             </p>
             <p>
-              Our moto is to ignite new ideas from students that would alter and
-              revolutionize the present day situation in India. It will give
-              students chance to showcase their innovative ideas and compete
-              with their peers.
+              Whether you're a seasoned developer or a budding innovator, SRM
+              BUILDS 4.0 provides the perfect platform to showcase your talent,
+              test your skills, and make a lasting impact.
             </p>
             <p>
-              SRM Builds 4.0 is an amalgamation of fun and learning where
-              spectacular ideas will be displayed, and students will learn and
-              feel inspired. Our 36-hour hackathon fosters an environment of
-              teamwork and innovation, where students showcase their passion for
-              technology, their creative drive, and their ingenious
-              problem-solving skills.
+              SRM BUILDS 4.0 is more than just a hackathon; it's a catalyst for
+              change, an incubator of groundbreaking ideas, and a launchpad for
+              aspiring innovators. Our mission is to ignite the spark of
+              innovation within students, empowering them to transform their
+              creative visions into tangible solutions that will revolutionize
+              the Indian landscape.
             </p>
           </div>
         </motion.div>
