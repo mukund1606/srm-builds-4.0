@@ -21,6 +21,8 @@ export default function HomePage() {
     "/event/8.jpeg",
     "/event/9.jpeg",
     "/event/10.jpeg",
+    "/event/11.jpeg",
+    "/event/12.jpeg",
   ];
 
   return (

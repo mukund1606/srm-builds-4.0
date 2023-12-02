@@ -59,7 +59,7 @@ export default function CarouselComponent(props: Props) {
                   key={image}
                   src={image}
                   animate={{ opacity: i === index ? 1 : 0.3 }}
-                  className="aspect-[3/2] w-full object-cover lg:aspect-video"
+                  className="aspect-[3/2] min-w-full object-cover lg:aspect-video"
                 />
               ))}
             </motion.div>
