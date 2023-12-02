@@ -11,18 +11,16 @@ import TracksComponent from "@/components/TracksComponent";
 
 export default function HomePage() {
   const images = [
-    "/event/1.jpg",
-    "/event/2.jpg",
-    "/event/3.jpg",
-    "/event/4.jpg",
-    "/event/5.jpg",
-    "/event/6.jpg",
-    "/event/7.jpg",
-    "/event/8.jpg",
-    "/event/9.jpg",
-    "/event/10.jpg",
-    "/event/11.jpg",
-    "/event/12.jpg",
+    "/event/1.jpeg",
+    "/event/2.jpeg",
+    "/event/3.jpeg",
+    "/event/4.jpeg",
+    "/event/5.jpeg",
+    "/event/6.jpeg",
+    "/event/7.jpeg",
+    "/event/8.jpeg",
+    "/event/9.jpeg",
+    "/event/10.jpeg",
   ];
 
   return (
