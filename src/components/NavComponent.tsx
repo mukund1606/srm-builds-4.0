@@ -45,7 +45,12 @@ function NavComponent() {
     "/" + window?.location?.href?.split("/").pop(),
   );
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen} isBordered>
+    <Navbar
+      onMenuOpenChange={setIsMenuOpen}
+      isMenuOpen={isMenuOpen}
+      isBordered
+      shouldHideOnScroll
+    >
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -116,6 +121,7 @@ function NavComponent() {
               href={item.href}
               size="lg"
               onClick={() => {
+                setIsMenuOpen(false);
                 setPathname(item.href);
               }}
             >
